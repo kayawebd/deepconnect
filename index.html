@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 36 Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="welcome-screen" class="screen active">
+            <h1>DeepConnect</h1>
+            <p>Unlock deeper conversations and stronger bonds.</p>
+            <p>Explore 36 intimate questions designed to connect you in just 45 minutes. Listen closely, share openly,
+                and discover more about each other.</p>
+            <button id="start-button">Start Session</button>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <div class="header">
+                <button id="home-button" class="header-button">Home</button>
+                <div class="set-navigation">
+                    <button id="set1-button" class="set-button" data-set="0">Set I</button>
+                    <button id="set2-button" class="set-button" data-set="12">Set II</button>
+                    <button id="set3-button" class="set-button" data-set="24">Set III</button>
+                </div>
+                <span id="progress-indicator"></span>
+            </div>
+            <div class="question-box">
+                <p id="current-question"></p>
+            </div>
+            <div class="navigation-buttons">
+                <button id="prev-button">Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <h1>Session Complete!</h1>
+            <p>You have finished all 36 questions. We hope this experience has helped you feel closer. Thank you for
+                using The 36 Questions.</p>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
